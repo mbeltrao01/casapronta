@@ -23,7 +23,8 @@ GitHub Actions (CI/CD)
 HTML + CSS
 
 # 🛠️ Como funciona
-O Terraform cria a infraestrutura na Azure:
+
+- O Terraform cria a infraestrutura na Azure:
 
 App Service Plan
 
@@ -31,7 +32,7 @@ Web App
 
 O código do site é enviado para o GitHub.
 
-A cada push na branch main, o GitHub Actions:
+- A cada push na branch main, o GitHub Actions:
 
 Zipa os arquivos do site
 
@@ -53,8 +54,4 @@ Você pode ver o site publicado aqui:
 👉 https://app-casapronta.azurewebsites.net
 
 # 👥 Equipe
-Amanda Galvão
-Khyra Oliveira
-Mario Beltão
-Sabrina Vidal
-Vinícios Pontes
+Amanda Galvão, Khyra Oliveira, Mario Beltão, Sabrina Vidal e Vinícios Pontes
