@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  .imovel {
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px #ccc;
+  }
+  .imovel img {
+    max-width: 100%;
+    height: auto;
+  }
+  
