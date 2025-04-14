@@ -1,0 +1,24 @@
+name: Deploy Azure App
+
+on:
+  push:
+    branches:
+      - main  # ou "master", se sua branch principal for essa
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout do código
+      uses: actions/checkout@v3
+
+    - name: Zipar o conteúdo da raiz do projeto
+      run: zip -r site.zip . -x ".git/*" -x ".github/*"
+
+    - name: Deploy no Azure
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: app-casapronta  # Nome da aplicação criado no Terraform
+        publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+        package: site.zip
