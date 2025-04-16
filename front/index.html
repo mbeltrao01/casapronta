@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Imobiliária Casa Pronta</title>
+  <link rel="stylesheet" href="/front/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <header>
+    <h1>Imobiliária Casa Pronta</h1>
+  </header>
+
+  <nav class="filtro">
+    <label for="tipo">Filtrar por tipo:</label>
+    <select id="tipo">
+      <option value="todos">Todos</option>
+      <option value="casa">Casa</option>
+      <option value="apartamento">Apartamento</option>
+      <option value="fazenda">Fazenda</option>
+    </select>
+  </nav>
+
+  <main class="galeria">
+    <div class="card" data-tipo="casa">
+      <img src="/images/casa-moderna.jpeg" alt="Casa moderna">
+      <div class="info">
+        <h2>Casa moderna</h2>
+        <p>R$ 550.000</p>
+        <div class="botoes">
+          <button class="favoritar"><i class="fa fa-heart"></i></button>
+          <button class="ver-mais">Ver mais</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-tipo="apartamento">
+      <img src="/images/apartamento-centro.jpeg" alt="Apartamento no centro">
+      <div class="info">
+        <h2>Apartamento no centro</h2>
+        <p>R$ 350.000</p>
+        <div class="botoes">
+          <button class="favoritar"><i class="fa fa-heart"></i></button>
+          <button class="ver-mais">Ver mais</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-tipo="casa">
+      <img src="/images/casa-praia.jpg" alt="Apartamento no centro">
+      <div class="info">
+        <h2>Casa na Praia</h2>
+        <p>R$ 850.000</p>
+        <div class="botoes">
+          <button class="favoritar"><i class="fa fa-heart"></i></button>
+          <button class="ver-mais">Ver mais</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-tipo="fazenda">
+      <img src="/images/fazenda.jpg" alt="Apartamento no centro">
+      <div class="info">
+        <h2>Fazenda</h2>
+        <p>R$ 950.000</p>
+        <div class="botoes">
+          <button class="favoritar"><i class="fa fa-heart"></i></button>
+          <button class="ver-mais">Ver mais</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-tipo="casa">
+      <img src="/images/casa-bairro.jpg" alt="Apartamento no centro">
+      <div class="info">
+        <h2>Casa de Bairro</h2>
+        <p>R$ 450.000</p>
+        <div class="botoes">
+          <button class="favoritar"><i class="fa fa-heart"></i></button>
+          <button class="ver-mais">Ver mais</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-tipo="fazenda">
+      <img src="/images/fazenda-planta.jpg" alt="Apartamento no centro">
+      <div class="info">
+        <h2>Fazenda + Plantação</h2>
+        <p>R$ 1250.000</p>
+        <div class="botoes">
+          <button class="favoritar"><i class="fa fa-heart"></i></button>
+          <button class="ver-mais">Ver mais</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-tipo="apartamento">
+      <img src="/images/loft.jpg" alt="Apartamento no centro">
+      <div class="info">
+        <h2>Apartamento/Loft</h2>
+        <p>R$ 650.000</p>
+        <div class="botoes">
+          <button class="favoritar"><i class="fa fa-heart"></i></button>
+          <button class="ver-mais">Ver mais</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-tipo="fazenda">
+      <img src="/images/chale.jpg" alt="Apartamento no centro">
+      <div class="info">
+        <h2>Chalé</h2>
+        <p>R$ 250.000</p>
+        <div class="botoes">
+          <button class="favoritar"><i class="fa fa-heart"></i></button>
+          <button class="ver-mais">Ver mais</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Imobiliária Casa Pronta</p>
+    <p>Contato: contato@casapronta.com.br | (81) 99999-9999</p>
+  </footer>
+
+ <script src="/front/script.js"></script>
+</body>
+</html>
