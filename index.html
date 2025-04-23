@@ -1,18 +1,189 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Imobiliária Casa Pronta</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Pronta | Seu Lar dos Sonhos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Imóveis disponíveis</h1>
-  <h2>Uma lista de Imóveis feitas para você</h2>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="imagem/Logo.png" alt="Casa Pronta" height="60"> Casa Pronta</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#imoveis">Imóveis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <div class="imovel">
-    <img src="https://images.adsttc.com/media/images/5d34/e507/284d/d109/5600/0240/large_jpg/_FI.jpg?1563747560" alt="Casa 1">
-    <p>Casa 1 - 3 quartos, 2 banheiros</p>
-  </div>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center text-white">
+                    <h1 class="display-4 fw-bold">Encontre o Lar dos Seus Sonhos</h1>
+                    <p class="lead">Descubra as melhores oportunidades imobiliárias com a Casa Pronta</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Search Section -->
+    <section class="search-section py-4 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <form id="searchForm" class="row g-3">
+                                <div class="col-md-4">
+                                    <select class="form-select" id="propertyType">
+                                        <option selected>Tipo de Imóvel</option>
+                                        <option>Casa</option>
+                                        <option>Apartamento</option>
+                                        <option>Terreno</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <select class="form-select" id="priceRange">
+                                        <option selected>Faixa de Preço</option>
+                                        <option>Até R$ 200.000</option>
+                                        <option>R$ 200.000 - R$ 500.000</option>
+                                        <option>Acima de R$ 500.000</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="submit" class="btn btn-primary w-100">Aplicar Filtros</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section id="imoveis" class="properties-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Imóveis em Destaque</h2>
+            <div class="row">
+                <!-- Property Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card property-card h-100">
+                        <img src="https://images.adsttc.com/media/images/5d34/e507/284d/d109/5600/0240/large_jpg/_FI.jpg?1563747560" class="card-img-top" alt="Casa Moderna">
+                        <div class="card-body">
+                            <h5 class="card-title">Casa Moderna em Condomínio</h5>
+                            <p class="card-text">3 quartos • 2 banheiros • 150m²</p>
+                            <p class="price">R$ 450.000</p>
+                            <a href="#" class="btn btn-outline-primary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Property Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card property-card h-100">
+                        <img src="https://forbes.com.br/wp-content/uploads/2022/03/3_Life_Dorchester-Collection-inaugura-predio-residencial-de-luxo-em-Dubai.jpg" class="card-img-top" alt="Apartamento Luxo">
+                        <div class="card-body">
+                            <h5 class="card-title">Apartamento de Luxo</h5>
+                            <p class="card-text">2 quartos • 1 banheiro • 80m²</p>
+                            <p class="price">R$ 320.000</p>
+                            <a href="#" class="btn btn-outline-primary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Property Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card property-card h-100">
+                        <img src="https://latinexclusive.com/sites/default/files/styles/property_banner_gallery_1228x830/public/api_file_downloads/5d5c6c648dc6d200102e7034_1.jpg?itok=fJ1UE3n1" class="card-img-top" alt="Casa com Piscina">
+                        <div class="card-body">
+                            <h5 class="card-title">Casa com Piscina</h5>
+                            <p class="card-text">4 quartos • 3 banheiros • 200m²</p>
+                            <p class="price">R$ 680.000</p>
+                            <a href="#" class="btn btn-outline-primary">Ver Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Entre em Contato</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Nome completo">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="E-mail">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control" placeholder="Telefone">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" rows="4" placeholder="Mensagem"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Casa Pronta</h5>
+                    <p>Seu parceiro ideal na busca pelo imóvel perfeito.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Contato</h5>
+                    <p>
+                        <i class="fas fa-phone"></i> (11) 1234-5678<br>
+                        <i class="fas fa-envelope"></i> contato@casapronta.com.br
+                    </p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Redes Sociais</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="mt-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2025 Casa Pronta. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
