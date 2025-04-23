@@ -62,6 +62,40 @@ select:focus,
     box-shadow: 0 0 0 0.2rem rgba(128, 128, 128, 0.25);
 }
 
+/* Select Dropdowns */
+.form-select {
+    color: #0b0b0b;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23808080' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+
+.form-select:hover {
+    border-color: #808080;
+}
+
+.form-select option {
+    color: #0b0b0b;
+    background-color: white;
+    padding: 10px;
+}
+
+.form-select option:hover,
+.form-select option:focus,
+.form-select option:active,
+.form-select option:checked {
+    background-color: #f5f5f5 !important;
+    color: #0b0b0b !important;
+}
+
+.form-select option:checked {
+    background-color: #e0e0e0 !important;
+}
+
+.form-select::-ms-expand {
+    display: none;
+}
+
 .contact-section .form-control {
     padding: 0.75rem;
 }
