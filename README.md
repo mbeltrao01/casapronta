@@ -54,4 +54,4 @@ Você pode ver o site publicado aqui:
 👉 https://app-casapronta.azurewebsites.net
 
 # 👥 Equipe
-Amanda Galvão, Khyra Oliveira, Mario Beltão, Sabrina Vidal e Vinícios Pontes
+Amanda Galvão, Khyra Oliveira, Mario Beltão, Sabrina Vidal e Vinícius Pontes
